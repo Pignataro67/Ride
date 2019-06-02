@@ -1,6 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+// import Card from './components/Card';
+// import Header from './components/Header';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ConfirmRouteContainer from './containers/ConfirmRouteContainer';
+import ResultsContainer from './containers/ResultsContainer';
+import SearchContainer from './containers/SearchContainer';
+import { getMapboxKey } from './actions/fetchLocations'
 import './App.css';
+
+
 
 function App() {
   return (

@@ -7,13 +7,13 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'reaxct-redux';
 
 class SearchContainer extends Component {
+
   render() {
     let cardLabel = "Enter your trip locations below:"
   return (
     <Card>
       <CardLabel cardLabel={cardLabel}/>
       <Search {...this.props}/>
-      <Search />
     </Card>
     )
   }
@@ -27,4 +27,10 @@ const mapDispatchToProps = (dispatch) => {
   return {...bindActionCreators(searchActions, dispatch)}
 }
  
-export default SearchContainer;
+export default connect(mapStateToProps, mapDispatchToProps, (stateProps, dispatchProps, ownProps) => {
+  return {
+    ...stateProps, 
+    actions: dispatchProps, 
+    router: ownProps,
+  };
+})(SearchContainer);

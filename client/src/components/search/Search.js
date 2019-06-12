@@ -68,18 +68,18 @@ class Search extends Component {
       <Card >
           <SearchInput label="Pickup Location" 
           
-          suggestedLocations = {this.props.suggestedStartingLocations} 
+          suggestedLocations = {this.props.searchReducer.suggestedStartingLocations} 
           onChange={this.handleChangeStart} 
           onSubmit={this.handleStartSearch}
           handleUpdateAddress={this.handleUpdateAddress} 
-          loading={this.props.isFetchingPickupLocation}/>
+          loading={this.props.searchReducer.isFetchingPickupLocation}/>
           <br/>
           <SearchInput label="DropOff" 
-            suggestedLocations={this.props.suggestedDropOffs}
+            suggestedLocations={this.props.searchReducer.suggestedDropOffs}
             onChange={this.handleChangeDropOff} 
             onSubmit={this.handleDropOffSearch}
             handleUpdateAddress={this.handleUpdateDropOffAddress}
-            loading={this.props.isFetchingDropoff}/>
+            loading={this.props.searchReducer.isFetchingDropoff}/>
           <br/>
           <Button buttonTitle="Submit" onClick={this.handleFormSubmit}/>
       </Card >

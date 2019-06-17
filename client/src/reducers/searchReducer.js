@@ -1,8 +1,8 @@
-export default function rootReducer(state = {
-  isFetchingStartingLocation: false,
+export default function searchReducer(state = {
+  isFetchingPickupLocation: false,
   isFetchingDropOff: false,
   suggestedPickupLocations: [],
-  suggestedDropOff: [],
+  suggestedDropOffs: [],
     }, action) {
     switch(action.type){
       case "FETCHING_SUGGESTED_PICKUP_LOCATIONS":

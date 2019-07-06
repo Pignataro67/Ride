@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import ConfirmRouteContainer from './containers/ConfirmRouteContainer';
-import ResultsContainer from './containers/ResultsContainer';
-import SearchContainer from './containers/SearchContainer';
+import ConfirmRouteContainer from '../containers/confirmRouteContainer';
+import ResultsContainer from './containers/sesultsContainer';
+import SearchContainer from './containers/searchContainer';
 import Background from './images/Background.jpg'
 import { getMapboxKey } from './actions/mapboxActions'
 import './App.css';

@@ -21,8 +21,8 @@ class App extends Component {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      width: '50vw',
-      height: '75vh',
+      width: '125vw',
+      height: '125vh',
       backgroundImage: `url(${Background})`
       }} className="App">
         <Router>

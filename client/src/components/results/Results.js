@@ -13,10 +13,6 @@ class Results extends Commponent {
     }
   }
 
-  // componentDidUpdate() {
-  //   return <Loader type="line-scale" hidden />
-  // }
-  
   render() {
     return (
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>

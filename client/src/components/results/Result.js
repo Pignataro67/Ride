@@ -51,7 +51,6 @@ class Result extends Component {
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {/* {this.tableRows(this.props.estimates)} */}
               {this.tableRows(this.state.estimates)}
             </Table.Body>
           </Table>

@@ -14,14 +14,14 @@ function _convertPickupLatLong(location) {
   return (dispatch) => {
     dispatch({type: 'CONVERTING_PICKUP_LAT_LONG'})
     return _getLatLong(location).then(({ lat, long }) => dispatch({type: 'RETRIEVE_PICKUP_LAT_LONG', pickupLat: lat, pickupLong: long}))
-  }
+  };
 }
   
 function _convertDropoffLatLong(location) {
   return (dispatch) => {
     dispatch({type: 'CONVERTING_DROPOFF_LAT_LONG'})
     return _getLatLong(location).then(({ lat, long }) => dispatch({type: 'RETRIEVE_DROPOFF_LAT_LONG', dropoffLat: lat, dropoffLong: long}))
- }
+ };
 }
   
 export function fetchPickupLocation(input) {
@@ -47,5 +47,5 @@ export function convertLatLong(pickupLocation, dropoffLocation) {
   return async (dispatch) => {
     await dispatch(_convertPickupLatLong(pickupLocation))
     await dispatch(_convertDropoffLatLong(dropoffLocation))
-  }
+  };
 }

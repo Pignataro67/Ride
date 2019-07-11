@@ -15,7 +15,7 @@ class Result extends Component {
   
       this.setState({
         estimates
-      })
+      });
     }
   }
 
@@ -27,7 +27,7 @@ class Result extends Component {
 
     this.setState({
       estimates
-    })
+    });
   }
 
   tableRows(estimates) {
@@ -35,7 +35,7 @@ class Result extends Component {
       return <Table.Row><Table.Cell>{estimate.type}</Table.Cell> <Table.Cell>{estimate.costEstimate}</Table.Cell><Table.Cell><Button buttonTitle={`Like ${estimate.counter}`}
                onClick={ () => this.handleOnClick(idx)}></Button></Table.Cell>
              </Table.Row>
-    })
+    });
   }
 
   render() {

@@ -9,6 +9,6 @@ const rootReducer = combineReducers({
   searchReducer,
   confirmRoutereducer,
   resultsReducer
-})
+});
 
 export default rootReducer;

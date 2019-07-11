@@ -49,7 +49,7 @@ class SearchInput extends Component {
           onFocus={this.onFocus}
           options={this.state.suggestedLocations} 
           open={this.state.isDropDownOpen || false}
-          icon={<span></span>}
+          icon={<span>shut up and drive</span>}
       />
       <Button Icon>
         <Icon name='search'/>

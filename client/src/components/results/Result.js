@@ -48,6 +48,7 @@ class Result extends Component {
                 <Table.HeaderCell>Ride Type</Table.HeaderCell>
                 <Table.HeaderCell>Cost</Table.HeaderCell>
                 <Table.HeaderCell>Like</Table.HeaderCell>
+                <Table.HeaderCell>Love</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
